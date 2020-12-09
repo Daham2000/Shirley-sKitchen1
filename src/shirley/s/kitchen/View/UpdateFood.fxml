@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="297.0" prefWidth="515.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shirley.s.kitchen.Controlar.UpdateFoodController">
+   <children>
+      <Pane layoutX="-1.0" layoutY="-1.0" prefHeight="48.0" prefWidth="516.0" styleClass="LabelBackground" stylesheets="@../css/Style.css">
+         <children>
+            <Label layoutX="307.0" layoutY="11.0" text="Update Food in Store" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="53.0" layoutY="97.0" text="Food Name:" />
+      <ComboBox fx:id="F_name" editable="true" layoutX="136.0" layoutY="93.0" prefWidth="150.0" />
+      <Label layoutX="321.0" layoutY="98.0" text="Qty:" />
+      <TextField fx:id="Qty" layoutX="375.0" layoutY="94.0" prefHeight="25.0" prefWidth="39.0" />
+      <Label layoutX="53.0" layoutY="145.0" text="M_date:" />
+      <DatePicker fx:id="M_date" layoutX="137.0" layoutY="141.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="53.0" layoutY="195.0" text="Exp_date:" />
+      <DatePicker fx:id="Exp_date" layoutX="137.0" layoutY="191.0" prefHeight="25.0" prefWidth="150.0" />
+      <Button layoutX="285.0" layoutY="237.0" mnemonicParsing="false" onAction="#AddtoStor" text="Add to Store" />
+      <Label layoutX="320.0" layoutY="145.0" text="Unit Price:" />
+      <TextField fx:id="UnitP" layoutX="394.0" layoutY="141.0" prefHeight="25.0" prefWidth="65.0" />
+   </children>
+</AnchorPane>
